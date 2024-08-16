@@ -1,0 +1,127 @@
+---
+title: "SLTC E-commerce Platform"
+description: "A comprehensive e-commerce solution with a Django-based website featuring a custom admin panel and a Flutter-based Android app for salesmen."
+date: "2024-03-15"
+url: "https://github.com/amanjoshi2002/Ecommerce-sltc"
+published: true
+repository: https://github.com/amanjoshi2002/Ecommerce-sltc
+---
+
+# SLTC E-commerce Platform
+
+## 🛒 Overview
+
+The SLTC E-commerce Platform is a full-stack solution designed to streamline the sales process for businesses. It consists of two main components:
+
+1. A Django-powered e-commerce website with a custom admin panel
+2. A Flutter-based Android application for salesmen to take orders from business owners
+
+This integrated system provides a seamless experience for both administrators and sales teams, enhancing efficiency and order management.
+
+## 🚀 Key Features
+
+- **E-commerce Website**:
+  - User-friendly product browsing and ordering system
+  - Secure payment integration
+  - Custom admin panel for inventory and order management
+  - Responsive design for desktop and mobile users
+
+- **Android Application**:
+  - Offline capability for salesmen in areas with poor connectivity
+  - Real-time synchronization with the main database when online
+  - Easy-to-use interface for quick order placement
+  - Product catalog with up-to-date information
+
+## 🛠️ Technology Stack
+
+- **Website Backend**: Django (Python)
+- **Website Frontend**: HTML, CSS, JavaScript
+- **Database**: PostgreSQL
+- **Android App**: Flutter
+- **API**: Django REST Framework
+- **Version Control**: Git
+
+## 🔍 How It Works
+
+1. **Admin Panel**: Business owners manage products, inventory, and view orders through the custom Django admin interface.
+2. **E-commerce Website**: Customers browse products and place orders online.
+3. **Android App**: Salesmen use the app to showcase products and take orders from business owners in person.
+4. **Synchronization**: Orders placed through the app are synced with the main database when an internet connection is available.
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- Django 3.2+
+- Flutter SDK
+- Android Studio
+- PostgreSQL
+
+### Website Setup
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/amanjoshi2002/Ecommerce-sltc
+   cd Ecommerce-sltc
+   ```
+
+2. Set up a virtual environment and install dependencies:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   pip install -r requirements.txt
+   ```
+
+3. Set up the database and run migrations:
+   ```
+   python manage.py migrate
+   ```
+
+4. Create a superuser for the admin panel:
+   ```
+   python manage.py createsuperuser
+   ```
+
+5. Run the development server:
+   ```
+   python manage.py runserver
+   ```
+
+### Android App Setup
+
+1. Navigate to the app directory:
+   ```
+   cd ../sltc_flutterapp
+   ```
+
+2. Get Flutter dependencies:
+   ```
+   flutter pub get
+   ```
+
+3. Run the app on an emulator or physical device:
+   ```
+   flutter run
+   ```
+
+## 💡 Usage
+
+- Access the admin panel at `http://localhost:8000/admin` to manage products and orders.
+- Visit the e-commerce website at `http://localhost:8000` to browse and purchase products.
+- Use the Android app to take orders when meeting with business owners in person.
+
+## 🔮 Future Enhancements
+
+- Implement advanced analytics for sales trends and inventory management.
+- Add a recommendation system based on customer purchase history.
+- Develop an iOS version of the mobile application.
+- Integrate with popular shipping and logistics services.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+For more information or to report issues, please visit our [GitHub repository]https://github.com/amanjoshi2002/Ecommerce-sltc.git).
