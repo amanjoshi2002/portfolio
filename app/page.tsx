@@ -6,7 +6,7 @@ import { FileDown } from "lucide-react";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
-  { name: "Resume", href: "/resume.pdf", download: true, icon: FileDown },
+  { name: "Resume", href: "/Aman_joshi_resume.pdf", download: true, icon: FileDown },
 ];
 
 export default function Home() {
