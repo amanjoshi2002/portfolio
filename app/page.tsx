@@ -7,6 +7,7 @@ const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
   { name: "Resume", href: "/Aman_joshi_resume.pdf", download: true, icon: FileDown },
+  { name: "Experience", href: "/experience" },
 ];
 
 export default function Home() {
