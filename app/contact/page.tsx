@@ -28,7 +28,7 @@ const socials = [
 
 export default function Example() {
 	return (
-		<div className="relative min-h-screen bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+		<div className="relative min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
 			<Particles
 				className="absolute inset-0 -z-10 animate-fade-in"
 				quantity={100}

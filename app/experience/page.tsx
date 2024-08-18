@@ -17,7 +17,7 @@ export default function ExperiencePage() {
     : experiences.filter((exp) => exp.type === activeTab);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
+    <div className="relative min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <Navigation />
       <div className="h-24 md:h-28"></div> {/* Spacer for fixed navbar */}
       
