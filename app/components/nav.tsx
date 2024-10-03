@@ -23,7 +23,7 @@ export const Navigation: React.FC = () => {
 		{ name: "Projects", href: "/projects" },
 		{ name: "Experience", href: "/experience" }, // Added Experience item
 		{ name: "Contact", href: "/contact" },
-		{ name: "Resume", href: "/Aman_joshi_resume.pdf", download: true, icon: FileDown },
+		{ name: "Resume", href: "/Aman_resume.pdf", download: true, icon: FileDown },
 	];
 
 	return (
