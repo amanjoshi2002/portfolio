@@ -7,7 +7,7 @@ import Particles from "../components/particles";
 import { Card } from "../components/card";
 import { experiences } from "@/app/data/experience";
 
-type ExperienceType = 'internship' | 'competition' | 'part-time' | 'all';
+type ExperienceType = 'internship' | 'competition' | 'freelancing' | 'all';
 
 export default function ExperiencePage() {
   const [activeTab, setActiveTab] = useState<ExperienceType>("all");
@@ -62,13 +62,13 @@ export default function ExperiencePage() {
             </button>
             <button
               className={`px-4 py-2 rounded mb-2 ${
-                activeTab === "part-time"
+                activeTab === "freelancing"
                   ? "bg-zinc-200 text-zinc-800"
                   : "bg-zinc-800 text-zinc-200"
               }`}
-              onClick={() => setActiveTab("part-time")}
+              onClick={() => setActiveTab("freelancing")}
             >
-              Part-time
+              freelancing
             </button>
             <button
               className={`px-4 py-2 rounded mb-2 ${

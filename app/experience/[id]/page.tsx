@@ -61,7 +61,7 @@ export default function ExperienceDetailPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {experience.photos.map((photo, index) => (
                   <div key={index} className="relative h-64 w-full">
-                    <Image src={photo} alt={`Photo ${index + 1}`} layout="fill" objectFit="cover" />
+                    <Image src={photo} alt={`Photo ${index + 1}`} layout="fill" objectFit="contain" />
                   </div>
                 ))}
               </div>

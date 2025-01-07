@@ -1,0 +1,115 @@
+---
+title: "Social Media Monitoring (SMM)"
+description: "A comprehensive system for monitoring social media platforms, analyzing data, and providing insights using Electron, React, and Flask."
+date: "2023-09-15"
+url: "https://github.com/amanjoshi2002/SMM-Social-Media-Monitoring-"
+published: true
+repository: https://github.com/amanjoshi2002/SMM-Social-Media-Monitoring
+---
+
+# Social Media Monitoring (SMM)
+
+A comprehensive system for monitoring social media platforms, analyzing data, and providing insights using Electron, React, and Flask.
+
+## Project Overview
+
+The Social Media Monitoring (SMM) project is designed to collect, analyze, and display social media data from platforms like X (formerly Twitter), Facebook, and Instagram. It consists of three main components:
+
+- **Backend**: A Flask-based backend responsible for scraping data, performing sentiment analysis, and sending alerts.
+- **Frontend**: An Electron-based desktop application to monitor and analyze the collected social media data.
+- **User Site**: A ReactJS-based web application that enables users to access and interact with the system.
+
+## 🚀 Features
+
+### Data Collection and Analysis
+- Scraping data from multiple social media platforms
+- Sentiment analysis of collected data
+- Real-time alerts and notifications
+
+### User Interface
+- Desktop application for data monitoring
+- Web interface for user interactions
+- Interactive dashboards and reports
+
+### Integration and Automation
+- Seamless integration between frontend and backend
+- Automated data processing and analysis
+- API endpoints for external integrations
+
+## 🛠 Tech Stack
+
+- **Frontend**: Electron, React.js
+- **Backend**: Flask
+- **Data Processing**: Python
+- **Styling**: CSS
+- **State Management**: Redux
+
+## Prerequisites
+
+- Python 3.7+ for the backend
+- Node.js for both the frontend (Electron) and the user site (ReactJS)
+- Virtual environment (recommended for the backend)
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/amanjoshi2002/SMM-Social-Media-Monitoring-.git
+   cd SMM-Social-Media-Monitoring-
+   ```
+
+2. **Backend Setup:**
+
+   Follow the steps in the [Backend README](https://github.com/amanjoshi2002/SMM-Social-Media-Monitoring-/blob/main/SMM_backend/README.md) to set up the Flask server.
+
+3. **Frontend Setup:**
+
+   Refer to the [Frontend README](https://github.com/amanjoshi2002/SMM-Social-Media-Monitoring-/blob/main/SMM_frontend/README.md) for instructions to install and run the Electron app.
+
+4. **User Site Setup:**
+
+   Visit the [User Site README](https://github.com/amanjoshi2002/SMM-Social-Media-Monitoring-/blob/main/Social_Report/README.md) for steps to set up the ReactJS web app.
+
+## Running the Application
+
+1. **Start the backend server:**
+
+   ```bash
+   python run.py
+   ```
+
+2. **Start the frontend application:**
+
+   ```bash
+   npm start
+   ```
+
+## 🔑 API Endpoints
+
+### Data Management
+- `/api/start_scrapers` - Initiates the data scraping process
+- `/api/twitter_data` - Retrieves Twitter data
+- `/api/meta_data` - Retrieves Meta data
+
+### User Interactions
+- `/api/scrape` - Scrapes user data based on input parameters
+
+## Middleware
+
+- **CORS**: Configured to allow specific origins.
+- **Logging**: Used for tracking API requests and responses.
+
+## Error Handling
+
+The application includes error handling mechanisms to log errors and provide meaningful feedback to users.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Electron](https://www.electronjs.org/)
+- [React](https://reactjs.org/)
+- [Flask](https://flask.palletsprojects.com/)

@@ -3,7 +3,7 @@ export type Experience = {
   title: string;
   company: string;
   duration: string;
-  type: 'internship' | 'part-time' | 'competition';
+  type: 'internship' | 'freelancing' | 'competition';
   summary: string;
   detailedContent: string;
   certificates?: string[];
@@ -11,6 +11,30 @@ export type Experience = {
 };
 
 export const experiences: Experience[] = [
+  {
+    id: '9',
+    title: "Web Application Developer",
+    company: "Bihar State Road Transport Corporation (BSRTC)",
+    duration: "2023",
+    type: "freelancing",
+    summary: "Developed a comprehensive bus booking portal for BSRTC using the MERN stack.",
+    detailedContent: `
+      <h2>BSRTC - Bihar State Bus Booking Portal</h2>
+      <p>As a web application developer, I created a full-featured bus booking portal for the Bihar State Road Transport Corporation (BSRTC). This project involved developing a user-friendly interface and robust backend to handle bookings and user data.</p>
+      
+      <h3>Key Responsibilities and Achievements:</h3>
+      <ul>
+        <li>Designed and implemented the frontend using React.js, ensuring a seamless user experience.</li>
+        <li>Developed the backend with Node.js and Express.js, providing efficient API services.</li>
+        <li>Utilized MongoDB for data storage, ensuring scalability and reliability.</li>
+        <li>Integrated JWT authentication for secure user login and data protection.</li>
+        <li>Collaborated with stakeholders to gather requirements and deliver a product that meets business needs.</li>
+      </ul>
+
+      <p>This project enhanced my skills in full-stack development and provided valuable experience in managing a large-scale web application.</p>
+    `,
+    photos: ["/photos/bsrtc.png"]
+  },
   {
     id: '4',
     title: "Participant",
@@ -36,7 +60,6 @@ export const experiences: Experience[] = [
     photos: ["/photos/persistent1.jpeg"]
   },
   {
-    
     id: '1',
     title: "Student Intern",
     company: "Persistent Systems Ltd.",
@@ -108,21 +131,21 @@ export const experiences: Experience[] = [
   },
   {
     id: '3',
-    title: "Part-time Website Developer",
+    title: "Website Developer",
     company: "Shri Laxmi Trading Company (SLTC)",
     duration: "2022",
-    type: "part-time",
+    type: "freelancing",
     summary: "Developed and maintained SLTC website using Django and Bootstrap, focusing on responsive design and user experience.",
     detailedContent: `
       <h2>Key Responsibilities and Achievements:</h2>
       <ul>
         <li>Developed and maintained SLTC website with Django and Bootstrap, ensuring business needs were met.</li>
         <li>Implemented responsive design for optimal viewing across devices.</li>
-        <li>Conducted regular part-time updates and contributed to enhancing user experience.</li>
+        <li>Conducted regular freelancing updates and contributed to enhancing user experience.</li>
       </ul>
-      <p>As a part-time website developer for SLTC, I was responsible for creating and maintaining their company website. This role allowed me to apply my skills in Django and Bootstrap to develop a functional and visually appealing website that effectively represented the company's brand and met their business requirements.</p>
+      <p>As a freelancing website developer for SLTC, I was responsible for creating and maintaining their company website. This role allowed me to apply my skills in Django and Bootstrap to develop a functional and visually appealing website that effectively represented the company's brand and met their business requirements.</p>
       <p>A key focus of my work was implementing responsive design principles, ensuring that the website provided an optimal viewing experience across a wide range of devices. This attention to detail significantly improved the site's accessibility and user engagement.</p>
-      <p>Throughout my tenure, I conducted regular updates to the website, continuously improving its functionality and user experience. This part-time role provided valuable experience in managing a live website for a real business, enhancing my skills in both front-end and back-end development.</p>
+      <p>Throughout my tenure, I conducted regular updates to the website, continuously improving its functionality and user experience. This freelancing role provided valuable experience in managing a live website for a real business, enhancing my skills in both front-end and back-end development.</p>
     `
   },
   {
@@ -216,7 +239,52 @@ export const experiences: Experience[] = [
       <p>This project showcases my ability to work with cutting-edge AI technologies and apply them to create unique, engaging content. It highlights the intersection of natural language processing, image generation, and video compilation in a novel application.</p>
     `,
     certificates: ["/certificates/certif-nit.jpg"]
-    
   },
- 
+  
+  {
+    id: '10',
+    title: "Landing Page Developer",
+    company: "The Sweet Treat",
+    duration: "2023",
+    type: "freelancing",
+    summary: "Developed a landing page for a cake shop using Next.js.",
+    detailedContent: `
+      <h2>The Sweet Treat - Cake Shop Landing Page</h2>
+      <p>As a landing page developer, I created a visually appealing and responsive landing page for The Sweet Treat, a cake shop. This project involved designing a user-friendly interface to showcase various cake offerings.</p>
+      
+      <h3>Key Responsibilities and Achievements:</h3>
+      <ul>
+        <li>Designed and implemented the frontend using Next.js, ensuring fast load times and SEO optimization.</li>
+        <li>Created a responsive design to provide a seamless experience across devices.</li>
+        <li>Collaborated with the client to understand their vision and translate it into a functional web page.</li>
+        <li>Integrated interactive features to enhance user engagement.</li>
+      </ul>
+
+      <p>This project improved my skills in frontend development and provided valuable experience in creating engaging user interfaces.</p>
+    `,
+    photos: ["/photos/sweet_treat.png"]
+  },
+  {
+    id: '11',
+    title: "Participant",
+    company: "Goa Policy Hackathon",
+    duration: "2023",
+    type: "competition",
+    summary: "Participated in a hackathon organized by Goa Policy, focusing on developing a Social Media Monitoring application.",
+    detailedContent: `
+      <h2>Social Media Monitoring System at Goa Policy Hackathon</h2>
+      <p>During the Goa Policy Hackathon, I participated in developing a Social Media Monitoring System. The project aimed to create an application to monitor social media platforms effectively.</p>
+      
+      <h3>Project Highlights:</h3>
+      <ul>
+        <li>Utilized Electron and React for the frontend, providing a robust and interactive user interface.</li>
+        <li>Implemented a Flask-based backend for data scraping, sentiment analysis, and alerting.</li>
+        <li>Collaborated with team members to integrate various models and ensure seamless data flow.</li>
+        <li>Gained experience in handling real-time social media data and performing complex analyses.</li>
+      </ul>
+
+      <p>This hackathon experience enhanced my skills in full-stack development and provided valuable insights into social media data analysis.</p>
+    `,
+    photos: ["/photos/police_hack.jpeg"]
+  },
 ];
