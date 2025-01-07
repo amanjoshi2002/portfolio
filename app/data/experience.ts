@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
     id: '9',
     title: "Web Application Developer",
     company: "Bihar State Road Transport Corporation (BSRTC)",
-    duration: "2023",
+    duration: "Dec-2024",
     type: "freelancing",
     summary: "Developed a comprehensive bus booking portal for BSRTC using the MERN stack.",
     detailedContent: `
@@ -39,7 +39,7 @@ export const experiences: Experience[] = [
     id: '4',
     title: "Participant",
     company: "Persistent Systems Semicolon Hackathon",
-    duration: "2024",
+    duration: "2023",
     type: "competition",
     summary: "Participated in a 24-hour hackathon, working with Flask and React.",
     detailedContent: `
@@ -63,7 +63,7 @@ export const experiences: Experience[] = [
     id: '1',
     title: "Student Intern",
     company: "Persistent Systems Ltd.",
-    duration: "Present",
+    duration: "2024",
     type: "internship",
     summary: "Developing modern web applications using Next.js, React, Tailwind CSS, and TypeScript in a professional environment.",
     detailedContent: `
