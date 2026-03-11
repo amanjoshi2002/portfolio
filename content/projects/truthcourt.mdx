@@ -1,0 +1,151 @@
+---
+title: "TruthCourt – AI-Powered Courtroom Simulation"
+description: "An LLM-powered virtual courtroom that detects misinformation by simulating debates between AI lawyer agents and delivering evidence-based verdicts."
+date: "2026-01-01"
+url: "https://github.com/amanjoshi2002/truthcourt"
+published: true
+repository: https://github.com/amanjoshi2002/truthcourt
+---
+
+# TruthCourt – AI-Powered Courtroom Simulation
+
+TruthCourt is an AI-powered message and claim analysis system that detects misinformation and suspicious content using a debate-based reasoning approach. The system simulates a virtual courtroom where AI agents debate claims before delivering a final verdict.
+
+The platform leverages **LLMs, retrieval augmented generation (RAG), semantic embeddings, and real-time web search** to provide evidence-based analysis.
+
+---
+
+# Project Overview
+
+TruthCourt analyzes messages or claims by running structured debates between AI agents. Two AI lawyers analyze the content from opposing perspectives while a judge agent evaluates their arguments and produces a final verdict.
+
+The system uses **semantic similarity search and vector embeddings** to retrieve past cases and reduce redundant processing.
+
+---
+
+# 🚀 Features
+
+## AI Debate Engine
+- Dual AI agents (Prosecutor and Defender) analyze claims
+- Multi-round debates for deeper reasoning
+- Judge AI evaluates arguments and produces final verdict
+- Structured reasoning pipeline
+
+## Fact Verification
+- Real-time web search integration
+- Evidence-based argument generation
+- Claim validation using external sources
+- Multi-source verification support
+
+## RAG-Based Memory
+- Vector embeddings for semantic similarity
+- Cached verdict retrieval for similar claims
+- Reduced API usage and faster responses
+- Context-aware reasoning
+
+## Debate Logging & Analytics
+- Detailed logs of debate rounds
+- Argument tracking and evidence references
+- Verdict summaries and reasoning explanations
+- Historical analysis of previous debates
+
+## Backend API
+- RESTful API for claim analysis
+- Debate history retrieval endpoints
+- Health monitoring endpoints
+- Rate limiting and API protection
+
+---
+
+# 🧠 AI Architecture
+
+The system follows a **multi-agent reasoning architecture**.
+
+1. **Similarity Check (RAG Pipeline)**  
+   Incoming message is converted to embeddings and compared with previous cases using semantic similarity.
+
+2. **AI Debate Simulation**  
+   - Prosecutor AI analyzes potential misinformation  
+   - Defender AI validates the claim using evidence  
+   - Multiple debate rounds refine reasoning
+
+3. **Judge Verdict System**  
+   The judge agent evaluates the arguments and produces:
+   - Final verdict
+   - Evidence summary
+   - Reasoning explanation
+
+---
+
+# 🛠 Tech Stack
+
+### AI & Machine Learning
+- **Google Gemini AI**
+- **Sentence Transformers**
+- **RAG Pipeline**
+- **Semantic Similarity Search**
+
+### Backend
+- **Python**
+- **Flask**
+- **REST API**
+
+### Data & Storage
+- **SQLite Database**
+- **Vector embeddings cache**
+- **Debate logs**
+
+### Infrastructure
+- **Environment-based configuration**
+- **Rate limiting**
+- **Logging system**
+
+---
+
+# 🔌 API Endpoints
+
+### Message Analysis
+- `/analyze` – Analyze messages using AI debate system
+- `/testanalyze` – Test endpoint without rate limits
+
+### Debate Data
+- `/debates` – Retrieve all debates
+- `/debates/<id>` – Retrieve specific debate
+
+### System Health
+- `/health` – API health status
+
+---
+
+# 🧪 Example Use Case
+
+Input message: Drinking warm lemon water every morning cures cancer.
+
+TruthCourt analysis process:
+
+1. AI prosecutor highlights suspicious claims and lack of scientific evidence  
+2. AI defender attempts to validate the claim with reliable sources  
+3. Judge agent evaluates arguments and delivers final verdict  
+
+Output:
+
+- Verdict: **False Claim**
+- Evidence summary
+- Debate reasoning log
+
+---
+
+# 📁 Project Repository
+
+GitHub Repository:  
+https://github.com/amanjoshi2002/truthcourt
+
+---
+
+# Future Improvements
+
+- Frontend dashboard for debate visualization
+- Multi-language misinformation detection
+- Fine-tuned models for fact-checking
+- Docker-based deployment
+- Real-time streaming debate interface

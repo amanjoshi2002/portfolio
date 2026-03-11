@@ -58,7 +58,7 @@ export default function ExperiencePage() {
               }`}
               onClick={() => setActiveTab("internship")}
             >
-              Internships
+              Professional 
             </button>
             <button
               className={`px-4 py-2 rounded mb-2 ${

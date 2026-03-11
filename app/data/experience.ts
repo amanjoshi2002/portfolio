@@ -60,7 +60,45 @@ export const experiences: Experience[] = [
     photos: ["/photos/persistent1.jpeg"]
   },
   {
-    id: '1',
+  id: '1',
+  title: "AI Developer",
+  company: "eDOT Solutions",
+  duration: "Apr 2025 – Present",
+  type: "internship",
+  summary: "Developing AI-powered applications using LLMs, RAG pipelines, and agent-based architectures.",
+  detailedContent: `
+    <h2>Building Production AI Systems at eDOT Solutions</h2>
+    <p>As an AI Developer at eDOT Solutions, I work on building intelligent AI-powered applications using modern Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and vector search technologies. My role focuses on designing scalable AI pipelines and integrating AI capabilities into real-world products.</p>
+    
+    <h3>Key Responsibilities and Achievements:</h3>
+    <ul>
+      <li>Developing AI-powered applications using LLMs for automation, reasoning, and intelligent workflows.</li>
+      <li>Designing and implementing RAG pipelines for contextual question answering and knowledge retrieval.</li>
+      <li>Integrating vector databases such as FAISS and Pinecone for semantic search and memory systems.</li>
+      <li>Building backend APIs using Python and FastAPI/Flask for AI model integration.</li>
+      <li>Working with frameworks like LangChain to develop agent-based AI workflows.</li>
+      <li>Integrating external AI APIs such as Gemini and OpenAI for advanced reasoning capabilities.</li>
+      <li>Deploying AI services using Docker and Ubuntu environments.</li>
+      <li>Collaborating with cross-functional teams to design scalable AI architectures.</li>
+    </ul>
+
+    <h3>Technologies Used:</h3>
+    <ul>
+      <li>Python</li>
+      <li>LangChain</li>
+      <li>LLMs (Gemini, OpenAI)</li>
+      <li>RAG Pipelines</li>
+      <li>Vector Databases (FAISS / Pinecone)</li>
+      <li>FastAPI / Flask</li>
+      <li>Docker</li>
+      <li>Ubuntu</li>
+    </ul>
+
+    <p>This role has strengthened my expertise in building production-ready AI systems, designing scalable RAG architectures, and deploying AI applications in real-world environments.</p>
+  `
+},
+  {
+    id: '12',
     title: "Student Intern",
     company: "Persistent Systems Ltd.",
     duration: "2024",

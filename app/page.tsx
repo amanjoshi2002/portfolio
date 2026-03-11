@@ -39,17 +39,19 @@ export default function Home() {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 max-w-xs sm:max-w-none">
-          Specializing in{" "}
-          <span className="duration-500 hover:text-zinc-300">
-            full-stack web development
-          </span>
-          {" "}and{" "}
-          <span className="duration-500 hover:text-zinc-300">
-            mobile app development
-          </span>
-          <span className="hidden sm:inline"> for Android and iOS platforms</span>.
-        </h2>
+       <h2 className="text-sm text-zinc-500 max-w-xs sm:max-w-none">
+  Building{" "}
+  <span className="duration-500 hover:text-zinc-300">
+    AI-powered systems
+  </span>
+  {" "}using{" "}
+  <span className="duration-500 hover:text-zinc-300">
+    Machine Learning, LLMs, and Computer Vision
+  </span>
+  <span className="hidden sm:inline">
+    {" "}with RAG pipelines, embeddings, and vector databases
+  </span>.
+</h2>
       </div>
     </div>
   );
