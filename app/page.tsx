@@ -40,16 +40,16 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
        <h2 className="text-sm text-zinc-500 max-w-xs sm:max-w-none">
-  Building{" "}
+  Building and deploying{" "}
   <span className="duration-500 hover:text-zinc-300">
-    AI-powered systems
+    production AI systems
   </span>
   {" "}using{" "}
   <span className="duration-500 hover:text-zinc-300">
-    Machine Learning, LLMs, and Computer Vision
+    LLMs, RAG, and Computer Vision
   </span>
   <span className="hidden sm:inline">
-    {" "}with RAG pipelines, embeddings, and vector databases
+    {" "}— backed by MLOps infrastructure for fine-tuning, vector search, and scalable inference
   </span>.
 </h2>
       </div>
