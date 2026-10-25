@@ -1,0 +1,59 @@
+---
+title: "Laya Gateway"
+description: "A lightweight Python LLM gateway that screens prompts with configurable guardrails and routes each request to the best matching model."
+date: "2026-09-27"
+url: "https://github.com/amanjoshi2002/laya-gateway"
+published: true
+repository: https://github.com/amanjoshi2002/laya-gateway
+---
+
+# Laya Gateway
+
+Laya Gateway uses [Laya](https://huggingface.co/convaiinnovations/laya), a small, fast decision model, as a front desk for AI applications. It checks whether a prompt should proceed and selects a suitable model before the application makes a larger model call.
+
+## Project links
+
+- [PyPI package](https://pypi.org/project/laya-gateway/)
+- [GitHub repository](https://github.com/amanjoshi2002/laya-gateway)
+- [Demo setup and instructions](https://github.com/amanjoshi2002/laya-gateway#demo-website)
+
+## What it does
+
+- **Model routing:** Describe available models in plain English and select the best match for each prompt.
+- **Prompt guardrails:** Classify prompts and apply configurable `allow`, `review`, and `block` thresholds.
+- **Lightweight inference:** Run the decision step with a small model on CPU.
+- **Typed results:** Return Pydantic results with confidence scores.
+- **Extensible safety checks:** Plug in a custom backend through the `DecisionEngine` protocol.
+
+## Example
+
+```python
+from laya_gateway import ModelRouter
+
+router = ModelRouter(
+    models={
+        "code": "Programming, debugging, and APIs",
+        "reasoning": "Math, logic, and multi-step reasoning",
+        "fast": "Simple factual questions and summaries",
+    }
+)
+
+result = router.select("Build a REST API using Python.")
+print(result.model, result.confidence)
+```
+
+Install it with:
+
+```bash
+pip install laya-gateway
+```
+
+## Safety and limitations
+
+This is an early release and the classifier is a first-pass filter, not a complete safety layer. The project reports roughly 80–85% safe/unsafe separation on its test prompts and everyday examples, and routing is heuristic. Clear model descriptions help routing; applications should keep their own safety checks in place.
+
+## Technology
+
+Python · Laya · Pydantic · Gradio
+
+Laya is by Convai Innovations. Laya Gateway is an independent project and is not affiliated with or endorsed by Convai Innovations.
