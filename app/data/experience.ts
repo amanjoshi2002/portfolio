@@ -61,7 +61,7 @@ export const experiences: Experience[] = [
   },
 {
   id: '1',
-  title: "AI Developer",
+  title: "AI/ML Engineer",
   company: "eDOT Solutions",
   duration: "Apr 2025 – Present",
   type: "internship",
